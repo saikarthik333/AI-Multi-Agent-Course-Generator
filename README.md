@@ -73,9 +73,7 @@ Creating educational content manually is time-consuming and prone to inconsisten
 - Gemini 2.5 Pro is highlighted as the professional-grade model for future enhancements, ensuring higher reasoning capabilities, instruction adherence, and polished outputs suitable for enterprise or academic applications.
 
  
-
-**Justification:**  
-Gemini and Hugging Face models provide flexibility in handling different content types (text, quiz, slides). Using multiple LLMs demonstrates agent collaboration and modular architecture.  
+ 
 
 ---
 
