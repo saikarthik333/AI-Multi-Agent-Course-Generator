@@ -65,13 +65,14 @@ Gemini and GPT models provide flexibility in handling different content types (t
 
 ```mermaid
 flowchart TD
-    A[User Input (Topic)] --> B[Streamlit Interface]
-    B --> C[Multi-Agent Orchestration]
-    C --> C1[Lesson Agent]
-    C --> C2[Quiz Agent]
-    C --> C3[Slides Agent]
-    C --> D[Output Files & Preview]
+    A["User Input: Topic"] --> B["Streamlit Interface"]
+    B --> C["Multi-Agent Orchestration"]
+    C --> C1["Lesson Agent"]
+    C --> C2["Quiz Agent"]
+    C --> C3["Slides Agent"]
+    C --> D["Output Files & Preview"]
 
+```
 
 
 - **Agents** operate independently but collaborate via Streamlit interface.  
