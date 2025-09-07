@@ -63,7 +63,7 @@ Creating educational content manually is time-consuming and prone to inconsisten
  
 
 **Justification:**  
-Gemini and GPT models provide flexibility in handling different content types (text, quiz, slides). Using multiple LLMs demonstrates agent collaboration and modular architecture.  
+Gemini and Hugging Face models provide flexibility in handling different content types (text, quiz, slides). Using multiple LLMs demonstrates agent collaboration and modular architecture.  
 
 ---
 
