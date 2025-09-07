@@ -1,10 +1,11 @@
 import os
 import google.generativeai as genai
 from transformers import pipeline
+import streamlit as st
 
 # Access keys from environment (Streamlit Secrets)
-GEMINI_KEY = os.getenv("GEN_API_KEY")
-HF_API_KEY = os.getenv("HF_API_KEY")
+GEMINI_KEY = st.secrets.get("GEN_API_KEY")
+HF_API_KEY = st.secrets.get("HF_API_KEY")
 
 # Configure Gemini
 if GEMINI_KEY:
