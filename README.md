@@ -55,11 +55,23 @@ Creating educational content manually is time-consuming and prone to inconsisten
 
 ## LLM Selection
 
-**Primary LLM:** Gemini 1.5  
-- Suitable for structured content generation, reasoning, and instruction following.  
+### Ideal LLM for Professional Use
+**Google Gemini 2.5 Pro**  
+- Recommended for production-level applications due to its advanced reasoning, robust instruction-following capabilities, and ability to generate high-quality, structured educational content.  
+- Ideal for real-world deployments where accuracy, scalability, and professional-grade outputs are required.  
 
-**Free-tier / Alternative LLM:** Hugging Face Mistral 7B Instruct
-- Used as a fallback for testing or when Gemini API is unavailable.
+### Free-tier / LLMs Used in This Project
+- **Google Gemini 1.5**  
+  - Used as the primary model for generating lessons, quizzes, and slides in this project.  
+  - Provides high-quality content while remaining accessible without paid subscription.  
+- **Hugging Face (Mistral 7B Instruct)**  
+  - Used as a fallback model when Gemini 1.5 is unavailable.  
+  - Ensures continuous content generation and demonstrates multi-agent fallback mechanisms.  
+
+### Justification
+- The combination of Gemini 1.5 and Hugging Face Mistral allows reliable, modular content generation within free-tier or trial limits.  
+- Gemini 2.5 Pro is highlighted as the professional-grade model for future enhancements, ensuring higher reasoning capabilities, instruction adherence, and polished outputs suitable for enterprise or academic applications.
+
  
 
 **Justification:**  
