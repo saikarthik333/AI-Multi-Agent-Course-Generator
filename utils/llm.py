@@ -1,11 +1,10 @@
 import os
-from dotenv import load_dotenv
 import google.generativeai as genai
 from transformers import pipeline
 
-# Load environment variables
-load_dotenv()
+# Access keys from environment (Streamlit Secrets)
 GEMINI_KEY = os.getenv("GEN_API_KEY")
+HF_API_KEY = os.getenv("HF_API_KEY")
 
 # Configure Gemini
 if GEMINI_KEY:
@@ -16,7 +15,14 @@ else:
 
 # Setup Hugging Face fallback (small instruct model)
 try:
-    hf_pipe = pipeline("text-generation", model="mistralai/Mistral-7B-Instruct-v0.1")
+    if HF_API_KEY:
+        hf_pipe = pipeline(
+            "text-generation",
+            model="mistralai/Mistral-7B-Instruct-v0.1",
+            use_auth_token=HF_API_KEY  # Authenticate to access gated model
+        )
+    else:
+        hf_pipe = pipeline("text-generation", model="mistralai/Mistral-7B-Instruct-v0.1")
 except Exception as e:
     hf_pipe = None
     print("⚠️ Hugging Face fallback not available:", e)
@@ -25,7 +31,7 @@ except Exception as e:
 def ask_gemini(prompt: str) -> str:
     """Query Gemini API"""
     if not gemini_model:
-        raise ValueError("Gemini API key missing. Please set GEN_API_KEY in .env")
+        raise ValueError("Gemini API key missing. Set GEN_API_KEY in Streamlit Secrets.")
     response = gemini_model.generate_content(prompt)
     return response.text
 
@@ -33,7 +39,7 @@ def ask_gemini(prompt: str) -> str:
 def ask_huggingface(prompt: str) -> str:
     """Query Hugging Face fallback"""
     if not hf_pipe:
-        raise ValueError("Hugging Face pipeline not initialized.")
+        raise ValueError("Hugging Face pipeline not initialized. Set HF_API_KEY in Streamlit Secrets if needed.")
     output = hf_pipe(prompt, max_new_tokens=300)
     return output[0]["generated_text"]
 
