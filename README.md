@@ -14,6 +14,11 @@ Creating educational content manually is time-consuming and prone to inconsisten
 - Agents collaborate to produce a complete learning module, demonstrating orchestration and independent operation.  
 
 ---
+## Live Link
+
+[https://saikarthik333-ai-multi-agent-course-generator.streamlit.app/](https://saikarthik333-ai-multi-agent-course-generator.streamlit.app/)
+
+---
 
 ## Project Features
 
@@ -36,14 +41,15 @@ Creating educational content manually is time-consuming and prone to inconsisten
 
 ---
 
-## Tools, Libraries, and Frameworks
+## Tools, Libraries, and Frameworks Used
 
-- **Python 3.11+**  
-- **Streamlit** - Web application frontend  
-- **LangChain / Custom Utilities** - Orchestrating agent workflow  
-- **OpenAI GPT / Gemini / Mistral** - LLMs for content generation  
-- **pptx** - Creating presentation slides  
-- **json / pathlib** - File management  
+- Python 3.11+
+- Streamlit — Web application frontend
+- LangChain and custom utilities — Orchestrating agent workflow
+- Gemini and Mistral — LLMs for content generation
+- pptx — Creating presentation slides
+- json and pathlib — File management
+
 
 ---
 
@@ -52,8 +58,9 @@ Creating educational content manually is time-consuming and prone to inconsisten
 **Primary LLM:** Gemini 1.5  
 - Suitable for structured content generation, reasoning, and instruction following.  
 
-**Free-tier/Alternative LLM:** OpenAI GPT-3.5  
-- Used as a fallback for testing and lightweight content generation.  
+**Free-tier / Alternative LLM:** Hugging Face Mistral 7B Instruct
+- Used as a fallback for testing or when Gemini API is unavailable.
+ 
 
 **Justification:**  
 Gemini and GPT models provide flexibility in handling different content types (text, quiz, slides). Using multiple LLMs demonstrates agent collaboration and modular architecture.  
@@ -149,12 +156,6 @@ streamlit run app/main.py
 
 ---
 
-## Live Deployment / Demo
-
-*(Optional, if deployed on Streamlit Cloud or Hugging Face Spaces)*
-\[Insert live demo link here]
-
----
 
 ## Notes
 
