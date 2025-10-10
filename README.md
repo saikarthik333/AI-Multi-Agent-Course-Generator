@@ -160,12 +160,6 @@ streamlit run app/main.py
 
 ---
 
-## GitHub Repository
-
-[https://github.com/saikarthik333/AI-Multi-Agent-Course-Generator](https://github.com/saikarthik333/AI-Multi-Agent-Course-Generator)
-
----
-
 
 ## Notes
 
