@@ -176,8 +176,14 @@ streamlit run app/main.py
 **Author:** Motapothula Sai Karthik 
 
 **Email:**[saikarthikmotapothula333@gmail.com](mailto:saikarthikmotapothula333@gmail.com) 
+**LinkedIn:** [saikarthik333](https://www.linkedin.com/in/saikarthik333/)
+**GitHub:** [saikarthik333](https://github.com/saikarthik333)
+
 
 **Project Topic:** AI Multi-Agent Project 
 
 ---
 
+## 📄 License
+
+This project is licensed under the MIT License.
