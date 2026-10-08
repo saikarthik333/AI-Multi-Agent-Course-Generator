@@ -23,7 +23,7 @@ Creating educational content manually is time-consuming and prone to inconsisten
 ## Project Features
 
 1. **Lesson Generation (Lesson Agent)**  
-   - Generates structured lesson content in Markdown format.  
+   - Generates structured lesson content (Markdown format).  
    - Includes introduction, key concepts, real-world examples, and summary.  
 
 2. **Quiz Generation (Quiz Agent)**  
