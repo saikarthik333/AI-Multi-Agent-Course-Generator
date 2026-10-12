@@ -66,7 +66,7 @@ Creating educational content manually is time-consuming and prone to inconsisten
   - Provides high-quality content while remaining accessible without paid subscription.  
 - **Hugging Face (Mistral 7B Instruct)**  
   - Used as a fallback model when Gemini 1.5 is unavailable.  
-  - Ensures continuous content generation and demonstrates multi-agent fallback mechanisms.  
+  - Helps continuous content generation and demonstrates multi-agent fallback mechanisms.  
 
 ### Justification
 - The combination of Gemini 1.5 and Hugging Face Mistral allows reliable, modular content generation within free-tier or trial limits.  
