@@ -60,7 +60,7 @@ Creating educational content manually is time-consuming and prone to inconsisten
 - Recommended for production-level applications due to its advanced reasoning, robust instruction-following capabilities, and ability to generate high-quality, structured educational content.  
 - Ideal for real-world deployments where accuracy, scalability, and professional-grade outputs are required.  
 
-### Free-tier / LLMs Used in This Project
+### Free-tier LLMs Used in This Project
 - **Google Gemini 1.5**  
   - Used as the primary model for generating lessons, quizzes, and slides in this project.  
   - Provides high-quality content while remaining accessible without paid subscription.  
