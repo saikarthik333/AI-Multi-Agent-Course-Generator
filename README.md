@@ -180,8 +180,6 @@ streamlit run app/main.py
 **Email:**[saikarthikmotapothula333@gmail.com](mailto:saikarthikmotapothula333@gmail.com)
 
 
-**Project Topic:** AI Multi-Agent Project 
-
 ---
 
 ## License
