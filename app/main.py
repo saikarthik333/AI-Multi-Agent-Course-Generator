@@ -49,7 +49,7 @@ if st.button("Generate Content"):
         zf.write(json_file, Path(json_file).name)
         zf.write(pptx_file, Path(pptx_file).name)
 
-    # Download button for ZIP
+    # Download button as a zip folder
     with open(zip_path, "rb") as file:
         st.download_button(
             "Download All Content (ZIP)",
