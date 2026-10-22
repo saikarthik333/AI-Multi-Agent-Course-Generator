@@ -156,7 +156,7 @@ streamlit run app/main.py
 ```
 
 5. Enter a topic and generate content.
-6. Download generated **lesson, quiz, and slides** individually or as a ZIP file.
+6. Download generated **lesson, quiz, and slides** individually or as a combined ZIP file.
 
 ---
 
