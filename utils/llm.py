@@ -14,7 +14,7 @@ if GEMINI_KEY:
 else:
     gemini_model = None
 
-# Setup Hugging Face fallback (small instruct model)
+# Setup Hugging Face fallback (small instruct model - Mistral 7B)
 try:
     if HF_API_KEY:
         hf_pipe = pipeline(
