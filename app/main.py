@@ -32,7 +32,7 @@ if st.button("Generate Content"):
 
     st.success("✅ Content Generated!")
 
-    # Display previews
+    #  for Displaying previews
     st.subheader("Lesson")
     st.text_area("Lesson Markdown", value=lesson, height=300)
 
